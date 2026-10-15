@@ -12,8 +12,8 @@ def main():
         data.data, data.target, test_size=0.2, random_state=42
     )
     
-    # 2. Define and train model (v1.0 baseline: n_estimators=10)
-    model = RandomForestClassifier(n_estimators=10, random_state=42)
+    # 2. Define and train model (v1.0 baseline: n_estimators=100)
+    model = RandomForestClassifier(n_estimators=100, random_state=42)
     model.fit(X_train, y_train)
     
     # 3. Evaluate model
